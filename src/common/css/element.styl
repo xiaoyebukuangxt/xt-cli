@@ -1,0 +1,57 @@
+//菜单begin
+// 菜单默认背景
+.el-menu
+    background: #001529 !important;     
+    border-right none !important; //去除默认的值 #e6e6e6
+
+//菜单栏样式
+.el-submenu__title
+    padding-left: 20px !important
+    box-sizing: border-box
+    color rgb(191,203,217) !important
+.el-icon-arrow-down
+    color rgb(191,203,217) !important
+.el-menu-item
+    background: #000c17 !important;
+    padding-left: 50px !important
+    box-sizing: border-box
+    color rgb(191,203,217) !important
+.father-el-menu-item
+    padding-left:20px !important
+    box-sizing: border-box
+
+//当前路由父菜单
+// .el-menu .is-active.el-submenu
+//     border none !important
+//     .el-submenu__title,i
+//         color: #2d8cf0 !important;
+//router_active用来控制 当点击顶部的路由，控制左侧菜单样式 .is-active无法做到
+// .el-menu-item.is-active{
+//     background: #2d8cf0 !important;
+//     color:#fff !important;
+// }
+//当前路由父菜单  sub_active用来控制 当点击顶部的路由，控制左侧菜单样式 .is-active无法做到
+.sub_active.el-submenu{
+    .el-submenu__title,i{
+        color: #2d8cf0 !important;
+    }      
+}
+//当前路由子菜单 router_active用来控制 当点击顶部的路由，控制左侧菜单样式 .is-active无法做到
+.el-menu-item.router_active{
+    background: #2d8cf0 !important;
+    color:#fff !important;
+}
+
+//鼠标放入父菜单获子菜单的样式
+.el-submenu__title:hover {
+    background: rgb(40,52,70) !important;       
+}
+.el-submenu .el-menu-item{
+    // background: rgb(50,65,89) !important;
+}
+.el-menu-item:hover {
+    // background: #000c17 !important;
+}
+
+//菜单end
+
