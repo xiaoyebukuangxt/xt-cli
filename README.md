@@ -1,5 +1,6 @@
 # xt-cli
 基于vue-cli3.0脚手架搭建一套属于自己的脚手架
+该脚手架自带vue-router、vuex、element-ui、echarts一整套框架体系
 
 
 ## 安装
